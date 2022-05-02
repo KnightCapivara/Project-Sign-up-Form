@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidelogo">
+        <div class="sidebar">
+            <img src="odin-lined.png">
+            <p class="norse">Odin</p>
+        </div>
+    </div>
+    <div class="rightside">
+        <div class="toptext">
+            <p>Este não é um verdadeiro serviço online! Você sabe que precisa de algo assim em sua vida para ajudá-lo a realizar seus sonhos mais profundos. Inscrever-se<em>agora</em> para começar.</p>
+            <p>Você <em>sabe</em> que você quer.</p>
+        </div>
+        <div class="whitebox">
+            <p id="whitebox-p">Vamos fazer isso!</p>
+            <form>
+                <div class="formrow">
+                    <div class="form-element">
+                        <label>Primeiro Nome</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-element">
+                        <label>Ultimo Nome</label>
+                        <input type="text" id="lastname" required>
+                    </div>
+                </div>
+                <div class="formrow">
+                    <div class="form-element">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-element">
+                        <label>Numero do Telefone</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                        required>
+                    </div>
+                </div>
+                <div class="formrow">
+                    <div class="form-element">
+                        <label>Senha</label>
+                        <input type="password" id="password" required>
+                        <p id="validation-error"></p>
+                    </div>
+                    <div class="form-element">
+                        <label>Confirmação da Senha</label>
+                        <input type="password" id="confirm_password" required>
+                    </div>
+                </div>
+            </div>
+                <button type="submit" class="create-account">Criar uma conta</button>        
+            </form>
+        <p id="account">Já possui uma conta? <a href="#" class="login">Conecte-se</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
