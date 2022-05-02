@@ -161,7 +161,7 @@ input:required:focus {
   }
 
   input:invalid {
-      color:
+      color: #596D48;
   }
 
 
